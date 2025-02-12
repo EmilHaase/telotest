@@ -24,15 +24,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="8">
-            
-            <ImageView
-                android:id="@+id/cloudIcon"
-                android:layout_width="@dimen/thumbSize"
-                android:layout_height="@dimen/thumbSize"
-                android:layout_margin="5dp"
-                android:scaleType="center"
-                android:src="@drawable/baseline_cloud_done_24"
-                android:visibility="gone" />
+
 
 
             <CheckBox
@@ -40,8 +32,22 @@
                 android:layout_width="@dimen/thumbSize"
                 android:layout_height="@dimen/thumbSize"
                 android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
                 android:scaleType="center"
                 android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/cloudIcon"
+                android:layout_width="@dimen/thumbSize"
+                android:layout_height="@dimen/thumbSize"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/baseline_cloud_done_24"
+                android:visibility="gone" />
+
             <ImageView
                 android:id="@+id/iconID"
                 android:layout_width="match_parent"
@@ -51,7 +57,7 @@
                 android:scaleType="center"
                 android:layout_weight="1"
                 android:src="@drawable/baseline_insert_drive_file_24"
-                app:tint="#14532D" />
+                app:tint="#14532D"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -116,7 +122,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/id_device_type_file"
+                        android:id="@+id/id_device_type_rowitem"
                         android:text="M"
                         android:autoSizeTextType="uniform"
                         android:textStyle="bold"
@@ -145,7 +151,6 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:orientation="horizontal">
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

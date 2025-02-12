@@ -694,7 +694,7 @@
                 android:background="@drawable/background1"
                 android:padding="3dp">
                 <TextView
-                    android:id="@+id/messageBox"
+                    android:id="@+id/message_box"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Message Box"
